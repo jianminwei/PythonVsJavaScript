@@ -1,7 +1,30 @@
-      /* Try the nick named function way */
+### Define short (nick) names for lengthy common functions
+
+      const log = (x) => console.log(x)
       
       const E = React.createElement
       const R = ReactDOM.render
       const ID = (x) => document.getElementById(x)
 
       R( E('h1', null, 'Hi Jianmin'), ID('content'))
+
+### Block scope
+
+      function f1() {
+          log('inside f1');
+
+          function f2() {
+              log('function f2() inside f1');
+          }
+
+          f2();
+      }
+      
+      
+      f1()
+      VM210:1 inside f1
+      VM210:1 function f2() inside f1
+      
+      f2()
+      VM535:1 Uncaught ReferenceError: f2 is not defined
+          at <anonymous>:1:1
