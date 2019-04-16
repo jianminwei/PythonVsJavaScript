@@ -1,0 +1,7 @@
+      /* Try the nick named function way */
+      
+      const E = React.createElement
+      const R = ReactDOM.render
+      const ID = (x) => document.getElementById(x)
+
+      R( E('h1', null, 'Hi Jianmin'), ID('content'))
