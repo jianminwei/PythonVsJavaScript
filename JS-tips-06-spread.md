@@ -11,6 +11,8 @@
     > a
     { name: 'Chicken Soup',
       ingredients: [ 'chicken', 'rice', 'vegies' ] }
+      
+    Spread an object you get an exact clone of the object.
 
 #### spread a list
 
