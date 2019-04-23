@@ -5,6 +5,8 @@
     //Notice that you can hava other JS statements
     //before the return() JSX element. This is a full blown
     //JS function. You do whatever is needed before the JSX element.
+    //Note that a JSX element can be a single element, a a complex composit element.
+    //But either way, it is considered a element.
     const Menu = (props) => {
         //you can do whatever the preparation here.
         console.log(props.title);
