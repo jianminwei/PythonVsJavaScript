@@ -15,7 +15,7 @@
                     <h1> {props.title} </h1>
                 </header>
                 
-		<div className="recipes">
+                <div className="recipes">
                     {props.recipes.map((recipe, i) =>
                         <Recipe key={i} recipe={recipe} />)
                     }
@@ -31,8 +31,7 @@
         <section>
             <div>
                 <h2> {props.recipe.name}</h2>
-                
-		<IngredientsList ingredients={props.recipe.ingredients} />
+                <IngredientsList ingredients={props.recipe.ingredients} />
             </div>
         </section>
     );
@@ -43,10 +42,10 @@
     const IngredientsList = (props) =>
     <div>
         <h3>{'Ingredients'}</h3>
-            <ul className="ingredients">
-                {props.ingredients.map(
-                    (ingredient, i) =>
-                    <li key={i}> {ingredient.name + ', ' + ingredient.amount } </li>
-                )}
-            </ul>
+        <ul className="ingredients">
+            {props.ingredients.map(
+                (ingredient, i) =>
+                <li key={i}> {ingredient.name + ', ' + ingredient.amount } </li>
+            )}
+        </ul>
     </div>;
