@@ -23,7 +23,7 @@
             </ul>
         </div>;
 
-#### Element with multiple children which are created by JavaScript loop
+#### Element with multiple children which can be created by JavaScript loop
 
     //Note: A single element can have multiple children.
     //and the multiple children can be created by using a JavaScript
