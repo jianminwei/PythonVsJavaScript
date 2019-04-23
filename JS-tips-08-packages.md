@@ -1,4 +1,4 @@
-#### For ES6/ES2015 you can import directly like:
+#### For ES6/ES2015, you can directly import json file:
 
     // example.json file
     {
