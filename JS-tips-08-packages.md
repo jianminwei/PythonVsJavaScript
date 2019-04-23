@@ -8,3 +8,6 @@
 
     // ES6/ES2015
     import * as data from './example.json';
+    
+    //In node.js
+    const data = require('./example.json');
