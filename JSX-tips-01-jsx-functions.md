@@ -34,7 +34,6 @@
 				<h2> {props.recipe.name}</h2>
 
 				<IngredientsList ingredients={props.recipe.ingredients} />
-				<Instructions steps={props.recipe.steps} />
 			</div>
 		</section>
 	);
