@@ -10,7 +10,7 @@
 #### Or it can be a custom element, like Recipe.
     //Both below are a single JSX element
     <div> {'hello world'} </div>
-    <div list={my_recipes} Recipe />
+    <Recipe list={my_recipes} />
     
 #### This is a composit JSX element    
     const IngredientsList = (props) =>
