@@ -1,0 +1,34 @@
+#### JSX element
+
+    A JSX element is a single element which can be made up by a single element
+    or a composit element. Either way it is considered a single element.
+
+#### This is a 'single' single JSX element
+    <div> {foo} </div>
+    
+#### This is a composit JSX element    
+    const IngredientsList = (props) =>
+        <div>
+            <h3>{'Ingredients'}</h3>
+            <ul className="ingredients">
+               <li> Eggs </li>
+               <li> Butter </li>
+               <li> Spinage </li>
+            </ul>
+        </div>;
+
+#### Note: A single element can have multiple children.
+    //and the multiple children is created by using a JavaScript
+    //construct, like 'map' or 'forEach', the goal is each loop
+    //generate a 'single' JSX element, like below
+    
+    const IngredientsList = (props) =>
+        <div>
+            <h3>{'Ingredients'}</h3>
+            <ul className="ingredients">
+                {props.ingredients.map(
+                    (ingredient, i) =>
+                    <li key={i}> {ingredient.name + ', ' + ingredient.amount } </li> //a single <li> element generated.
+                )}
+            </ul>
+    </div>;
