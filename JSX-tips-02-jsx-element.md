@@ -6,8 +6,8 @@
 #### This is a 'single' single JSX element
     <div> {foo} </div>
     
-#### A JSX element can be a html element, like <p>, <div>, <span> etc.
-#### Or it can be a custom element.
+#### A JSX element can be a html element, like p, div, span etc.
+#### Or it can be a custom element, Recipe.
     //Both below are a single JSX element
     <div> {'hello world'} </div>
     <div list={my_recipes} Recipe />
