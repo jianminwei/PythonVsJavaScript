@@ -10,7 +10,7 @@
         console.log(props.title);
 
         return (
-	    <article>
+            <article>
                 <header>
                     <h1> {props.title} </h1>
                 </header>
