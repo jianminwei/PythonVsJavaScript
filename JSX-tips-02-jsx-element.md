@@ -17,8 +17,10 @@
             </ul>
         </div>;
 
-#### Note: A single element can have multiple children.
-    //and the multiple children is created by using a JavaScript
+#### Element with multiple children which are created by JavaScript loop
+
+    //Note: A single element can have multiple children.
+    //and the multiple children can be created by using a JavaScript
     //construct, like 'map' or 'forEach', the goal is each loop
     //generate a 'single' JSX element, like below
     
