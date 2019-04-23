@@ -3,7 +3,8 @@
 ##### 1st way:
 
 	//Notice that you can hava other JS statements
-	//before the return() JSX element.
+	//before the return() JSX element. This is a full blown
+	//JS function. You do whatever is needed before the JSX element.
 	const Menu = (props) => {
 
 		//you can do whatever the preparation here.
