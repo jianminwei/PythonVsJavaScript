@@ -31,3 +31,15 @@ of operations. When you do imperative programming, you instruct computer to do e
     0: {firstname: "ccFirstName", lastname: "aalastName"}
     1: {firstname: "bbFirstName", lastname: "bblastName"}
     2: {firstname: "aaFirstName", lastname: "cclastName"}
+
+### Once function
+
+    const once = fn => {
+       let done = false;
+       return (...args) => {
+          if (!done) {
+             done = true;
+             fn(...args);
+          }
+      };
+    };
