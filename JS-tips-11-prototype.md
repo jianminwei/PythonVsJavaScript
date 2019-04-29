@@ -2,7 +2,7 @@
 
 In JavaScript, a sub-class inherite it's parent properties and methods through "prototype".
 Every JS instance has a "\_\_proto\_\_" which pointing to it's parent prototype. For example, every
-array instance pointing Array.prototype.
+array instance pointing to Array.prototype.
 
     const arr = [1, 2, 3]
 
