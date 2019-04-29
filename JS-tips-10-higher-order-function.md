@@ -13,7 +13,8 @@ of operations. When you do imperative programming, you instruct computer to do e
     ];
 
     //define a sortBy function which takes a "property" as argument, and return a comparison function
-    const sortBy = (property) => { return (a,b) => (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0; }
+    const sortBy = (property) => { 
+                    return (a,b) => (a[property] < b[property]) ? -1 : (a[property] > b[property]) ? 1 : 0; }
 
     //sort people by "firstname"
     people.sort(sortBy("firstname"))
