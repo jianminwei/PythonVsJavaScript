@@ -1,4 +1,4 @@
-### JavaScript is using prototype inheritance
+### JavaScript uses prototype inheritance
 
 In JavaScript, a sub-class inherite it's parent properties and methods through "prototype".
 Every JS instance has a "\_\_proto\_\_" which pointing to it's parent prototype. For example, every
