@@ -28,5 +28,16 @@ It's actually doing this behind the scene
 arr get the "map" method from Array's prototype. "arr" itself doesn't have "map" method.
 But arr is an instance of Array, it traverse up to Array using \_\_proto\_\_ to get the "map" method.
     
+### Prototype chain
 
+    > var arr = ['a', 'b'];
+    > var p = Object.getPrototypeOf;
     
+    > p(arr) === Array.prototype
+    true
+
+    > p(p(arr)) === Object.prototype
+    true
+    
+    > p(p(p(arr)))
+    null    
