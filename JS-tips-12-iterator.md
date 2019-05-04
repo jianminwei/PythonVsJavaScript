@@ -45,3 +45,30 @@ In Javascript, every iterable object contains a function whose key is Symbol.ite
     done: falsevalue: (2) [2, "b"]__proto__: Object
     iter.next()
     {value: undefined, done: true}
+    
+    
+### Generator
+
+    class GeneratorClass {
+        constructor (...args) {
+            this.args = args;
+        }
+    
+        * [Symbol.iterator] () {
+            for (const arg of this.args) {
+                yield arg; 
+            }
+        }
+    }
+
+Note: The above * define a generator method, and it's key is Symbol.iterator which defines an iterator for the class.
+
+    for (const e of new GeneratorClass('a','b','c')) {
+        console.log(e)
+    }
+    
+    a
+    b
+    c
+
+
