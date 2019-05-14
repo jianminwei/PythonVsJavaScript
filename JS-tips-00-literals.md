@@ -38,7 +38,7 @@
                                    
        set.add("d")
        
-    7. Map
+    8. Map
     
        const m = new Map()  //Note: you have to use "new Map()" to create a Map. 
                                    //There is no special syntax to start a Map literal
@@ -46,11 +46,11 @@
        m.set("a", 1)    
        m.set("b", 2) 
        
-    8. Regular expression
+    9. Regular expression
      
        /^(\d\d\d\d)-(\d\d)-(\d\d)$/        //Note: reqular expression literal is treated as a special object type
 
        const [all, year, month, day] =  
-       /^(\d\d\d\d)-(\d\d)-(\d\d)$/.exec('2999-12-31');  //note r.exec() return a array
+       /^(\d\d\d\d)-(\d\d)-(\d\d)$/.exec('2999-12-31');  //note r.exec() return an array, you can then destructure it.
        
     
